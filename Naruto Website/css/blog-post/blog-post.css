@@ -1,0 +1,20 @@
+.blog-content {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #444;
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .blog-content {
+        padding: 10px;
+    }
+}
