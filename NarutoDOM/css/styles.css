@@ -1,0 +1,120 @@
+/* Reset default margin and padding for elements */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+header {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: black;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #FF6F00;
+    text-align: left;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+    border: none;
+    background-color: #000;
+}
+
+/* Image styles */
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 24px;
+    color: #FF6F00;
+}
+
+/* Sticky navigation bar */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Responsive layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    header {
+        font-size: 24px; /* Adjust header font size */
+    }
+}
+
+/* Responsive layout for screens smaller than 480px (mobile) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Further decrease font size for mobile */
+    }
+
+    header {
+        font-size: 20px; /* Adjust header font size */
+    }
+
+    /* Modify the layout for mobile screens */
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav a {
+        margin: 5px 0; /* Add some space between mobile navigation links */
+    }
+
+    main {
+        padding: 10px; /* Decrease main content padding for mobile */
+    }
+}
